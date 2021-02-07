@@ -1,0 +1,25 @@
+simple program to calculate average of elements in an array.
+
+If the array is empty, then a test fails because it tries to divide by zero
+
+sample output: 
+test_list_size_0 (__main__.TestCase) ... ERROR
+test_list_size_1 (__main__.TestCase) ... ok
+test_list_size_4 (__main__.TestCase) ... ok
+
+======================================================================
+ERROR: test_list_size_0 (__main__.TestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-2\test_average_of_elements_in_a_list.py", line 19, in test_list_size_0
+    self.assertEqual(average_of_elements_in_a_list.average_of_list(list), 0)
+  File "c:\Users\pitts\Documents\School\Winter 2021\CS 362\Week 5\Homework 4\CS362-Homework4-Question-2\average_of_elements_in_a_list.py", line 15, in average_of_list
+    average = sum/len(list)
+ZeroDivisionError: division by zero
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+
+[Done] exited with code=1 in 0.075 seconds
